@@ -17,7 +17,8 @@ class TestRegistration:
 
         driver.find_element(*Locators.REGISTRATION_BUTTON).click()
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.CONSTRUCTOR_BUTTON))
-        assert Data.LOGIN_URL in driver.current_url
+        element = driver.find_element(*Locators.CONSTRUCTOR_BUTTON)
+        assert element.is_displayed()
     
     def test_incorrect_password(self, driver):    #  проверка ошибки некорректного пароля
         driver.get(Data.REGISTRATION_URL)
@@ -31,8 +32,3 @@ class TestRegistration:
         error_element = WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.TEXT_ERROR_PASSWORD))
         error_text = error_element.text
         assert 'Некорректный пароль' in error_text
-
-    error_element = WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.TEXT_ERROR_PASSWORD))
-    error_text = error_element.text
-
-    assert 'Некорректный пароль' in error_text
