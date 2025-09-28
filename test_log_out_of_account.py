@@ -19,8 +19,9 @@ class TestLogOut:
         cabinet_button.click()
         exit_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable(Locators.EXIT_BUTTON))
         exit_button.click()
-
-        assert Data.LOGIN_URL in driver.current_url
+        element = driver.find_element(*Locators.EMAIL_BUTTON)
+        assert element.is_displayed()
   
 
   
+
