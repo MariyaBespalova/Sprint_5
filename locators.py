@@ -17,7 +17,7 @@ class Locators:
     PASSWORD_RECOVERY_BUTTON = (By.XPATH, "//a[text() = 'Восстановить пароль]")  #  кнопка "Восстановить пароль"
     LOGIN_BUTTON_PASSWORD_RECOVERY = (By.XPATH, "//a[text() = 'Войти']")  #  кнопка "Войти"
     EXIT_BUTTON = (By.XPATH, "//button[text() = 'Выход']")  #  кнопка выход
-    LOGOTIP_STELLAR = (By.XPATH, "//div[@class = 'AppHeader_header__logo__2D0X2']") #  логотип стеллар бургер
+    LOGOTIP_STELLAR = (By.XPATH, "//div[contains(@class, 'AppHeader_header__logo__2D0X2')]") #  логотип стеллар бургер
 
     #  локаторы раздела Конструктор
     ROLLS_HEADLINE = (By.XPATH, "//h2[text() = 'Булки']")  
@@ -25,4 +25,5 @@ class Locators:
     TOPPINGS_HEADLINE = (By.XPATH, "//span[text() = 'Начинки']")  
     GALAXY_SAUSE = (By.XPATH, "//p[text() = 'Соус традиционный галактический']")  
     TOPPINGS_MEAT = (By.XPATH, "//p[text() = 'Мясо бессмертных моллюсков Protostomia']")
+
     BURGER_INGREDIENT = (By.XPATH, "//p[text() = 'Флюоресцентная булка R2-D3']")
