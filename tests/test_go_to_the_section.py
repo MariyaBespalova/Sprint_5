@@ -14,6 +14,7 @@ class TestSection:
     def test_navigation(self, driver, section_name, section_locator, expected_element_locator):  
         driver.get(Data.STELLAR_URL)
         WebDriverWait(driver, 5).until(EC.element_to_be_clickable(section_locator))
-        driver.find_element(*section_locator).click() 
+        element = driver.find_element(*section_locator)
+        driver.execute_script("arguments[0].scrollIntoView();", element)
         element = WebDriverWait(driver, 5).until(EC.visibility_of_element_located(expected_element_locator))
         assert element.is_displayed(), f"{section_name} раздел не отображается"

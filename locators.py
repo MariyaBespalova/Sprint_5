@@ -8,7 +8,7 @@ class Locators:
     REGISTRATION_BUTTON = (By.XPATH, "//button[text()='Зарегистрироваться']")  # кнопка Зарегистрироваться
     PERSONAL_CABINET_BUTTON = (By.XPATH, "//p[text()='Личный Кабинет']")  # кнопка Личный кабинет
     CONSTRUCTOR_BUTTON = (By.XPATH, "//p[text()='Конструктор']")  #  кнопка конструктор
-    TEXT_ERROR_PASSWORD = (By.XPATH, "//*[@id='root']/div/main/div/form/fieldset[3]/div/p")  #  ошибка "Некорректный пароль"
+    TEXT_ERROR_PASSWORD = (By.XPATH, "//p[text() = 'Некорректный пароль']")  #  ошибка "Некорректный пароль"
 
     LOGIN_BUTTON = (By.XPATH, "//button[text()='Войти']")  # кнопка Войти
     EMAIL_BUTTON = (By.XPATH, "//input[@name='name']")  #  поле ввода Email в личном кабинете
@@ -23,6 +23,6 @@ class Locators:
     ROLLS_HEADLINE = (By.XPATH, "//h2[text() = 'Булки']")  
     SAUCE_HEADLINE = (By.XPATH, "//span[text() = 'Соусы']")  
     TOPPINGS_HEADLINE = (By.XPATH, "//span[text() = 'Начинки']")  
-    SAUCE_SPICY = (By.XPATH, "//p[text() = 'Соус Spicy-X']")  
+    SAUCE_SPICY = (By.XPATH, "//p[text() = 'Соус традиционный галактический']")  
     TOPPINGS_MEAT = (By.XPATH, "//p[text() = 'Мясо бессмертных моллюсков Protostomia']")
     BURGER_INGREDIENT = (By.XPATH, "//p[text() = 'Флюоресцентная булка R2-D3']")
