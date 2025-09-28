@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 test_data = [
-    ("Соусы", Locators.SAUCE_HEADLINE, Locators.SAUCE_SPICY),
+    ("Соусы", Locators.SAUCE_HEADLINE, Locators.GALAXY_SAUSE),
     ("Начинки", Locators.TOPPINGS_HEADLINE, Locators.TOPPINGS_MEAT),
     ("Булки", Locators.ROLLS_HEADLINE, Locators.BURGER_INGREDIENT),
 ]

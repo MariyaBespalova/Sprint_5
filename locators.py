@@ -23,6 +23,6 @@ class Locators:
     ROLLS_HEADLINE = (By.XPATH, "//h2[text() = 'Булки']")  
     SAUCE_HEADLINE = (By.XPATH, "//span[text() = 'Соусы']")  
     TOPPINGS_HEADLINE = (By.XPATH, "//span[text() = 'Начинки']")  
-    SAUCE_SPICY = (By.XPATH, "//p[text() = 'Соус традиционный галактический']")  
+    GALAXY_SAUSE = (By.XPATH, "//p[text() = 'Соус традиционный галактический']")  
     TOPPINGS_MEAT = (By.XPATH, "//p[text() = 'Мясо бессмертных моллюсков Protostomia']")
     BURGER_INGREDIENT = (By.XPATH, "//p[text() = 'Флюоресцентная булка R2-D3']")
